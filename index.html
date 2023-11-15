@@ -15,36 +15,40 @@
         <div id="grid-container">
             <header>
                 <nav>
-                    <a href="index.html"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden"></a>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="products.html">PORTFOLIO</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="about.html#contact">CONTACT</a></li>
-                    </ul>
+                    <a href="index.html" class="nav"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden"></a>
+                    <a href="index.html" class="nav">Home</a>
+                    <a href="products.html" class="nav">Portfolio</a>
+                    <a href="about.html" class="nav">About</a>
+                    <a href="about.html#contact" class="contact-btn">Contact</a>
+                    
                     <i id="til-toppen" class="fa-solid fa-arrow-up"></i>
                 </nav>
-                <h1>Compeling headline</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                <!--kilde til hvordan linke seg videre på siden ved bruk av id, link og #,  linje 11-->
-                <button type="button"><a href="#Our-services">Read more about our services</a></button>
-                <!--kilde, bevegende bilde, linje 7-->
-                <video autoplay muted loop height="300" width="100%">
-                    <source src="img/mountains.mp4" type="video/mp4">
-                </video>
-            </header>
+                <section class="section-1">
+                    <img src="https://placehold.co/400" alt="placeholder bilde" class="mobile-bilde">
+                    <h1 class="overskrift-forside">Compeling headline</h1>
+                    <p class="p-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                    <!--kilde til hvordan linke seg videre på siden ved bruk av id, link og #,  linje 11-->
+                    <a href="#Our-services" class="read-more-btn">Read more about our services</a>
+                    <!--kilde, bevegende bilde, linje 7-->
+                    <video autoplay muted loop height="300" width="400" class="desktop-bilde">
+                        <source src="img/mountains.mp4" type="video/mp4">
+                    </video>
+                </section>    
+                </header>
             <main>
-                <section>
+                <section class="section-2-f">
                     <h3>Enganging subheading. What can you help your visitors with</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </section>
-                <section>
+                <section class="section-3-f">
                     <!--bilde hentet fra https://placehold.co/-->
-                    <img src="https://placehold.co/400" alt="">
-                    <h5>About Our Company</h5>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-                    <!--kilde til button tagg under, linje 5-->
-                    <button type="button"><a href="about.html">Read more</a></button>
+                    <img src="https://placehold.co/400" alt="" class="mobile-bilde-2">
+                    <article class="article-1-f">
+                        <h5>About Our Company</h5>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                        <!--kilde til button tagg under, linje 5-->
+                        <button type="button"><a href="about.html">Read more</a></button>
+                    </article>    
                 </section>
                 <section>
                     <h5 id="Our-services">Our Services</h5>
@@ -77,13 +81,13 @@
                     </form>
                 </section>
             </main>
+            <footer>
+                <img src="img/logo1.png" alt="bilde av logoen til nettsiden">
+                <p>Company copyright 2023</p>
+                <a href="https://www.facebook.com/?locale=nb_NO"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></li></a>
+                <a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin"></i></li></a>
+            </footer>
         </div>
     </body>
-    <footer>
-        <img src="img/logo1.png" alt="bilde av logoen til nettsiden">
-        <p>Company copyright 2023</p>
-        <a href="https://www.facebook.com/?locale=nb_NO"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></li></a>
-        <a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin"></i></li></a>
-    </footer>
 </html>

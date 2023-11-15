@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-areas: "header" 
+                         "main"
+                         "footer";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-rows: 0fr 1fr 0.5fr;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.5rem;
+    color: #000;
+}
+
+.contact-btn{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #e6bd43;
+    color: #000;
+    padding: 1rem ;
+    margin: 0rem 9rem;
+}
+
+h1{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.p-heading{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-align: center;
+}
+
+.read-more-btn{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #e6bd43;
+    color: #000;
+    padding: 1.5rem;
+    margin: 0rem 0rem 0rem 5rem;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-110%, -10%);
+}
+
+
+
+.desktop-bilde{
+    display: none;
+}
+
+.mobile-bilde{
+    background-image:url(https://placehold.co/400) ; /*kilde https://www.w3schools.com/cssref/pr_background-image.php*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    opacity: 0.6; /*kilde https://www.w3schools.com/css/css_background.asp*/ 
+} 
+.section-1{
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0rem;
+}
+
+.section-2-f{
+    text-align: center;
+    padding: 2rem;
+}
+
+.section-3-f{
+    text-align: center;
+    padding: 2rem;
+    background-color: #e6bd43;
+}
+
+.mobile-bilde-2{
+    padding: 2rem;
+}
+
+.article-1-f{
+    padding: 0rem 5rem;
+    text-align: left;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0rem 1rem;
+}
+
+h5{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    padding: 0rem 2rem;
+}
+
+p{
+    padding: 0rem 2rem;
+}
+
+main section article button{
+    padding: 2rem;
+    margin: 0rem 0rem 0rem 4.5rem;
+    background-color: #e6bd43;
+}
+
+main section article button a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+
