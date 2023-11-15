@@ -107,6 +107,10 @@ h1{
     background-color: #e6bd43;
 }
 
+.section-4-f{
+    text-align: center;
+}
+
 .mobile-bilde-2{
     padding: 2rem;
 }
@@ -129,6 +133,18 @@ h5{
     padding: 0rem 2rem;
 }
 
+#Our-services{
+    text-align: center;
+}
+
+section article i{
+    font-size: 30px;
+}
+
+.p-overskrift{
+    font-weight: bold;
+}
+
 p{
     padding: 0rem 2rem;
 }
@@ -143,6 +159,63 @@ main section article button a{
     color: #000;
     text-decoration: none;
 }
+
+.sign-up-f{
+    background-color: #2525252d;
+    padding: 3rem;
+}
+
+.p-signup-overskrift{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0rem;
+    text-align: center;
+}
+
+section form{
+    display: flex;
+    justify-content: center;
+}
+
+section form label{
+    background-color: white;
+    padding: 1rem 10rem 1rem 1rem;
+    color: #2525252d;
+}
+
+section form button{
+    background-color: #e6bd43;
+    color: #000;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    background-color: #252525;
+    color: white;
+    padding: 0rem 0rem 3rem 0rem;
+}
+
+.footer-img{
+    text-align: center;
+    padding: 5rem 0rem 0rem 0rem;
+}
+
+footer a{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-around;
+    font-size: 40px;
+}
+
+footer p{
+    padding: 4rem 2rem;
+    font-size: 25px;
+}
+
+
+
 
 
 
