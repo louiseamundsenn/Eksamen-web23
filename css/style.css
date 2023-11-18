@@ -25,7 +25,7 @@ footer{
     grid-area: footer;
 }
 
-.nav{
+.navbar{
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -96,6 +96,7 @@ h1{
     padding: 1rem 0rem;
 }
 
+
 .section-2-f{
     text-align: center;
     padding: 2rem;
@@ -148,6 +149,7 @@ section article i{
 p{
     padding: 0rem 2rem;
 }
+
 
 main section article button{
     padding: 2rem;
@@ -214,7 +216,46 @@ footer p{
     font-size: 25px;
 }
 
+main section span{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem 0rem 0rem 3rem;
+}
 
+h4{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0rem 4rem 0rem 0rem;
+}
+
+hr{
+    height: 2px;
+    width: 70%;
+    background-color: #e6bd43;
+}
+
+main section button{
+    font-size: 20px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+}
+
+main section button a{
+    text-decoration: none;
+    color: #000;
+}
+
+.article-1-p{
+    background-color: white;
+}
+
+.p-center{
+    text-align: center;
+    margin: 3rem;
+}
 
 
 
