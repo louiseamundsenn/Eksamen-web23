@@ -100,7 +100,6 @@ h1{
 }
 
 
-
 .desktop-bilde{
     display: none;
 }
@@ -113,6 +112,47 @@ h1{
     height: 400px;
     opacity: 0.6; /*kilde https://www.w3schools.com/css/css_background.asp*/ 
 } 
+
+.about-bilde{
+    background-image:url(https://placehold.co/400) ; /*kilde https://www.w3schools.com/cssref/pr_background-image.php*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    opacity: 0.7;
+}
+
+.about-section-1{
+    position: absolute;
+    top: 50%;
+    left: 50% ;
+    transform:translate(-50%, -10%);
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.408);
+    padding: 1rem;
+}
+
+.about-h2{
+    padding: 0rem 0rem 0rem 1rem;
+    margin: 1rem;
+}
+
+.about-p-1{
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.get-in-touch-btn{
+    width: 70%;
+    padding: 0.5rem;
+    margin: 1rem 2rem;
+}
+
+.get-in-touch-a{
+    display: flex;
+    text-align: left;
+}
+
+
 .section-1{
     position: relative;
     text-align: center;
@@ -297,4 +337,34 @@ main section button a{
     padding: 0rem;
 }
 
+.about-form{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
+section iframe{
+    width: 50%;
+    height: 50%;
+}
+
+.clients-about{
+    background-color: #e6bd43;
+}
+
+.clients-h4{
+   text-align: center;
+   padding: 5rem 0rem 0rem 0rem;
+}
+
+.logo-1{
+    padding: 2rem 0rem 0rem 2rem;
+}
+
+.logo-2{
+    padding: 2rem 0rem 0rem 4rem;
+}
+
+.logo-3{
+   padding: 3rem 0rem 3rem 8.5rem;
+}
