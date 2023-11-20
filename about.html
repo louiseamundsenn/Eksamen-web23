@@ -12,15 +12,16 @@
         <title></title>
     </head>
     <body>
-        <div>
+        <div id="grid-container">
             <header>
                 <nav>
-                    <a href="index.html" class="navbar"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden"></a>
+                    <a href="index.html" class="navbar"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden" id="logo-bilde"></a>
                     <a href="index.html" class="navbar">Home</a>
                     <a href="products.html" class="navbar">Portfolio</a>
                     <a href="about.html" class="about-btn">About</a>
                     <a href="#contact" class="contact-btn">Contact</a>
-                    <i id="til-toppen" class="fa-solid fa-arrow-up"></i>
+                    <a href="#logo-bilde"><i id="til-toppen" class="fa-solid fa-arrow-up"></i></a>
+                    
                 </nav>
             </header>
             <main>
@@ -62,10 +63,10 @@
                     <img src="img/logo2.png" alt="" class="logo-2">
                     <img src="img/logo3.png" alt="" class="logo-3">
                 </section>
-                <section>
+                <section class="section-form">
                     <h3 id="contact">Contact us</h3>
                     <article>
-                        <p>Send us a message</p>
+                        <p class="form-p-about">Send us a message</p>
                         <form class="about-form"> <!--kilde linje 5-->
                             <label for="name">Name</label><br>
                             <input type="text" id="name" name="name" value="Ola Nordman.."><br>
@@ -73,29 +74,31 @@
                             <input type="text" id="subject" name="subject" value="Branding.."><br>
                             <label for="message">Message</label><br>
                             <textarea name="message" rows="10" cols="30"></textarea>
-                            <input type="submit" value="Send message">
+                            <input type="submit" value="Send message" class="form-btn-about">
                         </form>
                     </article>
                     <article>
-                        <p>Contact information</p>
+                        <p class="contact-info-about">Contact information</p>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint </p>
-                        <ul>
-                           <li><i class="fa-solid fa-location-pin"> B R A Veien 4, 1757 Halden</i></li>
-                           <li><i class="fa-solid fa-phone"> 69 60 80 00</i></li>
-                           <li><i class="fa-solid fa-envelope"> postmottak@hiof.no</i></li>
+                        <ul class="contact-icons">
+                           <li><i class="fa-solid fa-location-pin"></i> B R A Veien 4, 1757 Halden</li>
+                           <li><i class="fa-solid fa-phone"></i> 69 60 80 00</li>
+                           <li><i class="fa-solid fa-envelope"></i> postmottak@hiof.no</li>
                         </ul>
                     </article>
                 </section>
-                <section> <!--kilde til hvordan jeg la inn kart i linje 14-->
+                <section class="kart-section"><!--kilde til hvordan jeg la inn kart i linje 14-->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d246701.77254906145!2d10.804683048958728!3d59.17720795533518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zaMO4Z3Nrb2xlbiBpIMO4c3Rmb2xk!5e0!3m2!1sno!2sno!4v1700072800815!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
                 </section>
             </main>
             <footer>
                 <img src="img/logo1.png" alt="bilde av logoen til nettsiden" class="footer-img">
                 <p>Company copyright 2023</p>
-                <a href="https://www.facebook.com/?locale=nb_NO"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></li></a>
-                <a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin"></i></li></a>
+                <section>
+                    <a href="https://www.facebook.com/?locale=nb_NO"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></li></a>
+                    <a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin"></i></li></a>
+                </section>
             </footer>
         </div>
     </body>

@@ -8,9 +8,9 @@
     grid-template-areas: "header" 
                          "main"
                          "footer";
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    grid-template-rows: 0fr 1fr 0.5fr;
+    grid-row-gap: 0px;
+    grid-column-gap:10px;
+    grid-template-rows: 0fr 1fr 0fr;
 }
 
 header{
@@ -126,7 +126,7 @@ h1{
     position: absolute;
     top: 50%;
     left: 50% ;
-    transform:translate(-50%, -10%);
+    transform:translate(-40%, -10%);
     width: 70%;
     background-color: rgba(255, 255, 255, 0.408);
     padding: 1rem;
@@ -277,7 +277,7 @@ footer a{
 }
 
 footer p{
-    padding: 4rem 2rem;
+    padding: 2.5rem 2rem 0rem 2rem;
     font-size: 25px;
 }
 
@@ -343,10 +343,6 @@ main section button a{
     
 }
 
-section iframe{
-    width: 50%;
-    height: 50%;
-}
 
 .clients-about{
     background-color: #e6bd43;
@@ -358,7 +354,7 @@ section iframe{
 }
 
 .logo-1{
-    padding: 2rem 0rem 0rem 2rem;
+    padding: 2rem 0rem 0rem 4rem;
 }
 
 .logo-2{
@@ -366,5 +362,92 @@ section iframe{
 }
 
 .logo-3{
-   padding: 3rem 0rem 3rem 8.5rem;
+   padding: 3rem 0rem 3rem 10.5rem;
+}
+
+.section-form{
+    background-color: #2525250f;
+}
+
+
+section article form{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+#contact{
+    text-align: center;
+    padding: 5rem 0rem 0rem 0rem;
+    margin: 0rem;
+}
+
+#subject{
+    color: #25252569;
+}
+
+#name{
+    color: #25252569;
+}
+
+.form-p-about{
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+.form-btn-about{
+    background-color: #e6bd43;
+    padding: 1rem;
+    margin: 0rem 14rem 4rem 0rem;
+}
+
+.contact-info-about{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section article ul li i{
+    font-size: 15px;
+}
+
+section article ul li{
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.contact-icons{
+    margin: 0rem;
+    padding: 0rem 0rem 3rem 1.5rem;
+}
+
+section iframe{
+    display: flex;
+    width: 100%;
+    height: 250px;
+}
+
+.kart-section{
+    padding: 0rem;
+    margin: 0rem;
+    background-color: #252525;
+}
+
+footer section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0rem 5rem 3rem 5rem;
+}
+
+#til-toppen{
+    top: 740px;
+    right: 20px;
+    position: fixed; /*kilde linje 12 (https://stackoverflow.com/questions/11399537/how-do-you-make-a-div-follow-as-you-scroll)*/
+    background-color: #000;
+    color: #fff;
+    font-size: 60px;
+    padding: 1rem;
 }
