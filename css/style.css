@@ -126,7 +126,7 @@ h1{
     position: absolute;
     top: 50%;
     left: 50% ;
-    transform:translate(-40%, -10%);
+    transform:translate(-35%, -20%);
     width: 70%;
     background-color: rgba(255, 255, 255, 0.408);
     padding: 1rem;
@@ -450,4 +450,201 @@ footer section{
     color: #fff;
     font-size: 60px;
     padding: 1rem;
+}
+
+
+@media only screen and (min-width:600px){
+    
+    #grid-container{
+        display: grid;
+        grid-template-areas: "header header header"
+                             "main main main"
+                             "footer footer footer";
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0fr 1fr 0fr;
+    }
+
+    nav{
+        margin: 0rem;
+    }
+
+    nav img{
+        display: flex;
+        justify-content: left;
+        margin: 3rem;
+        padding: 0rem 1rem 0rem 0rem;
+        width: 8%;
+    }
+
+    nav a{
+        position: sticky;
+        top: 20%;
+    }
+
+    nav p{
+        display: flex;
+        margin: 0rem 6rem 6rem 0rem;
+    }
+
+    header nav p{
+        justify-content: right;
+        margin: 0rem 6rem 6rem 0rem;
+        padding: 1rem 1rem;
+    }
+
+    .home-btn{
+        margin: 1rem;
+    }
+
+    .navbar{
+        margin: 1rem;
+    }
+
+    .contact-btn{
+        margin: 0rem;
+    }
+
+    .mobile-bilde{
+        display: none;
+    }
+
+    .desktop-bilde{
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+
+    .section-1{
+        position: relative;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 1rem 0rem;
+    }
+
+    h1{
+        font-size: 80px;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .p-heading{
+        font-size: 40px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .read-more-btn{
+        position: absolute;
+        top: 30%;
+        left: 55%;
+        transform: translate(-110%, -10%);
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 70px;
+    }
+
+    p{
+        font-size: 45px;
+        padding: 1rem 20rem;
+    }
+
+    .mobile-bilde-2{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-3-f{
+        display: flex;
+    }
+
+    .section-3-f-p{
+        padding: 0rem 25rem 0rem 0rem;
+    }
+
+    h5{
+        padding: 0rem 0rem;
+        font-size: 45px;
+    }
+
+    main section article button{
+        margin: 0rem;
+        padding: 2rem 5rem 2rem 5rem;
+    }
+    
+    main section article button a{
+        font-size: 35px;
+    }
+
+    .article-1-f{
+        padding: 6rem 5rem;
+    }
+
+    .article-4-f{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    section div article i{
+        font-size: 60px;
+    }
+
+    .p-overskrift{
+        font-size: 40px;
+    }
+
+    .our-services-p{
+        padding: 1rem 4rem;
+        margin: 0rem 3rem 10rem;
+        font-size: 30px;
+    }
+
+    #Our-services{
+        font-size: 60px;
+        padding: 5rem 0rem 1rem 0rem;
+    }
+
+    .p-signup-overskrift{
+        font-size: 60px;
+    }
+
+    section form{
+        font-size: 30px;
+    }
+
+    .sign-up-email{
+        padding: 1rem 15rem 1rem 1rem;
+    }
+
+    .sign-up-btn{
+        font-size: 30px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-img{
+        width: 7%;
+    }
+
+    footer p{
+        font-size: 50px;
+        padding: 10rem 2rem 0rem 2rem;
+    }
+
+    footer section{
+        display: flex;
+        justify-content: space-between;
+        padding: 13rem 5rem 3rem 5rem;
+    }
 }
