@@ -119,7 +119,6 @@ h1{
     justify-content: center;
     width: 100%;
     height: 800px;
-    opacity: 0.7;
 }
 
 .about-section-1{
@@ -460,8 +459,8 @@ footer section{
         grid-template-areas: "header header header"
                              "main main main"
                              "footer footer footer";
-        grid-row-gap: 10px;
-        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0fr 1fr 0fr;
     }
@@ -495,7 +494,7 @@ footer section{
 
     header nav p{
         justify-content: right;
-        margin: 0rem 6rem 6rem 0rem;
+        margin: 0rem 6rem 1rem 0rem;
         padding: 1rem 1rem;
     }
 
@@ -520,9 +519,25 @@ footer section{
     }
 
     .contact-btn{
-        margin: 0rem;
+        margin: 0.5rem;
         padding: 1rem;
         font-size: 15px;
+    }
+
+    .contact-btn:hover{
+        background-color: #000;
+        color: #e6bd43;
+    }
+
+    #til-toppen{
+        top: 800px;
+        right: 125px;
+        position: fixed; /*kilde linje 12 (https://stackoverflow.com/questions/11399537/how-do-you-make-a-div-follow-as-you-scroll)*/
+        background-color: #000;
+        color: #fff;
+        font-size: 30px;
+        padding: 1rem;
+        z-index: 1;
     }
 
     .mobile-bilde{
@@ -530,9 +545,11 @@ footer section{
     }
 
     .desktop-bilde{
+        background-image: url(mountains.mp4);
         display: flex;
         width: 100%;
         height: 50%;
+        opacity: 0.4;
     }
 
     .section-1{
@@ -547,6 +564,7 @@ footer section{
         top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 1; /*kilde https://www.w3schools.com/cssref/pr_pos_z-index.php*/
     }
 
     .p-heading{
@@ -556,6 +574,7 @@ footer section{
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 1rem;
+        z-index: 1; 
     }
 
     .read-more-btn{
@@ -564,11 +583,18 @@ footer section{
         left: 56%;
         transform: translate(-110%, -10%);
         font-size: 20px;
+        z-index: 1;
+    }
+
+    .read-more-btn:hover{
+        background-color: #000;
+        color: #e6bd43;
+        z-index: 1;
     }
 
     h3{
         font-size: 30px;
-        padding: 1rem 27rem;
+        padding: 3rem 27rem;
     }
 
     p{
@@ -587,27 +613,36 @@ footer section{
     }
 
     .section-3-f-p{
-        padding: 0rem 25rem 0rem 0rem;
-        font-size: 20px;
+        padding: 0rem 15rem 1rem 0rem;
+        font-size: 15px;
     }
 
     h5{
         padding: 0rem 0rem;
-        font-size: 30px;
+        font-size: 20px;
     }
 
-    main section article button{
-        margin: 0rem;
-        padding: 1rem;
-        font-size: 25px;
+    .read-more-about-us-btn{
+        padding: 0.5rem;
+        background-color: #e6bd43;
+        text-decoration: none;
+        color: #000;
+        border: 3px solid;
     }
+
+    .read-more-about-us-btn:hover{
+        background-color: #000;
+        color: #e6bd43;
+        border: 1px solid #000;
+    }
+    
     
     main section article button a{
         font-size: 20px;
     }
 
     .article-1-f{
-        padding: 1rem 5rem;
+        padding: 4rem 2rem;
     }
 
     .article-4-f{
@@ -626,14 +661,14 @@ footer section{
     }
 
     .our-services-p{
-        padding: 1rem 1rem;
-        margin: 0rem 3rem 0rem;
-        font-size: 20px;
+        padding: 1rem 0rem;
+        margin: 0rem 2rem 0rem;
+        font-size: 15px;
     }
 
     #Our-services{
         font-size: 30px;
-        padding: 5rem 0rem 1rem 0rem;
+        padding: 5rem 0rem 2rem 0rem;
     }
 
     section div article i{
@@ -656,24 +691,35 @@ footer section{
         font-size: 15px;
     }
 
+    .sign-up-btn:hover{
+        background-color: #000;
+        color: #e6bd43;
+        border: #000;
+    }
+
     footer{
         display: flex;
         justify-content: space-around;
     }
 
     .footer-img{
-        width: 210px;
+        width: 145px;
     }
 
     footer p{
         font-size: 20px;
-        padding: 10rem 2rem 0rem 2rem;
+        padding: 10rem 2rem 0rem 7rem;
+        color: #ffffffcd;
     }
 
     footer section{
         display: flex;
         justify-content: space-between;
-        padding: 13rem 5rem 3rem 5rem;
+        padding: 10rem 0rem 5rem 5rem;
+    }
+
+    footer a{
+        margin: 1rem;
     }
 
     .section-1{
@@ -685,7 +731,7 @@ footer section{
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 500px;
+        height: 400px;
         opacity: 0.6;
     }
 
@@ -699,8 +745,8 @@ footer section{
 
     h4{
         justify-content: left;
-        font-size: 30px;
-        margin: 5rem 0rem 1rem 11rem;
+        font-size: 35px;
+        margin: 5rem 0rem 1rem 10rem;
     }
 
     main section span{
@@ -708,15 +754,25 @@ footer section{
         margin: 3rem 0rem 5rem 9.5rem;
     }
 
-    main section button{
+    main section span a{
         font-size: 20px;
+        padding: 1rem;
+        text-decoration: none;
+        border: 2px solid;
+        color: #000;
+        margin: 1rem;
+    }
+
+    main section span a:hover{
+        background-color: #000;
+        color: #e6bd43;
     }
 
     .branding-articles{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        margin: 2rem 8rem 5rem 8rem;
+        margin: 2rem 10rem 5rem 10rem;
         align-items: stretch;
     }
 
@@ -724,39 +780,50 @@ footer section{
         margin: 0rem;
     }
 
+
     main section div article img{
         width: 350px;
         height: 350px;
     }
 
+    main section div article img:hover{
+        width: 360px;
+        height: 360px;
+        transition: width 1s; /*kilde, https://www.w3schools.com/css/css3_transitions.asp*/
+    }
+
+    .portfolio-p{
+        margin: 1rem 0rem 2rem 0rem;
+    }
+
     #branding{
-        font-size: 30px;
-        margin: 0rem 0rem 1.5rem 8rem;
+        font-size: 35px;
+        margin: 0rem 0rem 1.5rem 7rem;
     }
 
     #design{
-        font-size: 30px;
-        margin: 0rem 0rem 1.5rem 8rem;
+        font-size: 35px;
+        margin: 0rem 0rem 1.5rem 7rem;
     }
 
     .design-articles{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 1rem 8rem 5rem 8rem;
+        margin: 1rem 10rem 5rem 10rem;
 
     }
 
     #development{
-        font-size: 30px;
-        margin: 0rem 0rem 1.5rem 8rem;
+        font-size: 35px;
+        margin: 0rem 0rem 1.5rem 7rem;
     }
 
     .development-articles{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 0rem 9rem 0rem 9rem;
+        margin: 0rem 10rem 0rem 10rem;
     }
 
     .development-img{
@@ -765,13 +832,15 @@ footer section{
     }
 
     .about-section-1{
-        top: 60%;
-        width:50%;
+        position: absolute;
+        top: 43%;
+        width: 40%;
         left: 65%;
+        background-color:#ffffffcf;
     }
 
     .about-bilde{
-        height: 500px;
+        height: 400px;
     }
 
     .about-p-1{
@@ -791,32 +860,37 @@ footer section{
     }
 
     .get-in-touch-btn{
-        padding: 0.5rem;
+        padding: 0.8rem;
         margin: 0rem 3rem 3rem;
         width: 30%;
+        background-color: #e6bd43;
+        color: #000;
+        text-decoration: none;
     }
 
-    .get-in-touch-a{
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-        font-size: 17px;
+    .get-in-touch-btn:hover{
+        background-color: #000;
+        color: #e6bd43;
+        border: #000;
     }
 
     section div article p{
         padding: 1rem;
-        margin: 0rem 5rem 1rem 5rem;
+        margin: 0rem 1rem 0rem 1rem;
+        font-size: 15px;
     }
 
     .clients-h4{
         display: flex;
         justify-content: center;
         margin: 0rem 1rem;
-        padding: 6rem;
+        padding: 4rem;
     }
 
     .logos{
         display: flex;
         justify-content: center;
-        padding: 0rem 0rem 6rem 0rem;
+        padding: 0rem 0rem 2rem 0rem;
     }
 
     .logo-1{
@@ -835,7 +909,7 @@ footer section{
     }
 
     .form-p-about{
-        padding: 3rem 1rem 1rem 20rem;
+        padding: 3rem 1rem 1rem 15rem;
         font-size: 20px;
     }
 
@@ -843,28 +917,50 @@ footer section{
         display: flex;
         flex-direction: column;
         max-width: 30%;
-        margin: 1rem 0rem 0rem 20rem;
+        margin: 1rem 0rem 0rem 15rem;
     }
 
     #name{
-        width: 500px;
+        width: 555px;
+        border: #fff;
+        padding: 1rem;
     }
 
     #subject{
-        width: 500px;
+        width: 555px;
+        border: #fff;
+        padding: 1rem;
     }
 
     section article form textarea{
-        width: 500px;
+        width: 555px;
         height: 150px;
+        border: #fff;
+    }
+
+    .form-btn-about{
+        padding: 0.5rem;
+        margin: 0rem 45rem 4rem 0rem;
+        font-size: 15px;
+        border: #e6bd43;
+    }
+
+    .form-btn-about:hover{
+        background-color: #000;
+        color: #e6bd43;
+        border: #000;
     }
 
     .contact-article-2{
-        position: absolute;
+        position: sticky;
         top: 225%;
-        left: 73%;
-        transform: translate(-50%, -50%);
+        left: 50%;
+        transform: translate(0%, -233%);
         width: 40%;
+    }
+
+    .section-form{
+        height: 700px;
     }
 
     .contact-info-about{
@@ -889,12 +985,6 @@ footer section{
     section article ul li i{
         font-size: 20px;
         padding: 0rem 2rem 0rem 0rem;
-    }
-
-    .form-btn-about{
-        padding: 0.5rem;
-        margin: 0rem 45rem 4rem 0rem;
-        font-size: 15px;
     }
 
     .kart-section{

@@ -4,6 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="nettside-forside">
+        <meta name="keywords" content="tjenester, service, ">
+        <!--opengraph meta data start--> <!--kilde, https://ahrefs.com/blog/open-graph-meta-tags/#which-open-graph-tags-to-use-->
+        <meta property="og:title" content="Dette er bedriften vår">
+        <meta property="og:description" content="Dette kan vi hjelpe deg med ...">
+        <meta property="og:image" content="https://placehold.co/400">
+        <meta property="og:url" content="www.CompelingHeadline.com"> <!--skal simulere en url til nettstedet-->
+        <!--opengraph meta data slutt-->
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css" >
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link href="css/font/font/css/fontawesome.css" rel="stylesheet">
@@ -24,17 +31,18 @@
                     </p>
                     <a href="#logo-bilde"><i id="til-toppen" class="fa-solid fa-arrow-up"></i></a>
                 </nav>
+                  
+                </header>
+            <main role="main"> <!--ARIA attributter kilde linje http://mcdlr.com/wai-aria-cheatsheet/ -->
                 <section class="section-1">
                     <img src="https://placehold.co/400" alt="placeholder bilde som bakgrunnsbilde på mobil, har ingen annen funksjon" class="mobile-bilde"> <!--bilde hentet fra https://placehold.co/-->
                     <h1>Compeling headline</h1>
                     <p class="p-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                    <a href="about.html#Our-services" class="read-more-btn">Read more about our services</a> <!--kilde til hvordan linke seg videre på siden ved bruk av id, link og #, https://www.tutorialspoint.com/how-to-create-links-to-sections-within-the-same-page-in-html-->
+                    <a href="about.html" class="read-more-btn">Read more about our services</a> <!--kilde til hvordan linke seg videre på siden ved bruk av id, link og #, https://www.tutorialspoint.com/how-to-create-links-to-sections-within-the-same-page-in-html-->
                     <video autoplay muted loop height="300" width="400" class="desktop-bilde"> <!--kilde, bevegende bilde, https://www.w3schools.com/howto/howto_css_fullscreen_video.asp-->
                         <source src="img/mountains.mp4" type="video/mp4">
                     </video>
-                </section>    
-                </header>
-            <main role="main"> <!--ARIA attributter kilde linje http://mcdlr.com/wai-aria-cheatsheet/ -->
+                </section>   
                 <section class="section-2-f">
                     <h3>Enganging subheading. What can you help your visitors with</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -44,7 +52,7 @@
                     <article class="article-1-f">
                         <h5>About Our Company</h5>
                         <p class="section-3-f-p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-                        <button type="button"><a href="about.html">Read more about us</a></button> <!--kilde til button tagg under, linje 5-->
+                        <a href="about.html" class="read-more-about-us-btn">Read more about us</a> <!--kilde til button tagg under, linje 5-->
                     </article>    
                 </section>
                 <section class="section-4-f">
@@ -74,15 +82,15 @@
                 </section>
                 <section class="sign-up-f">
                     <p class="p-signup-overskrift">Sign up for our newsletter</p>
-                    <form action=""> <!-- kilder, https://www.w3schools.com/howto/howto_css_signup_form.asp -->
-                        <label for="email" class="sign-up-email"><b>Email</b></label>
+                    <form> <!-- kilder, https://www.w3schools.com/howto/howto_css_signup_form.asp -->
+                        <label class="sign-up-email"><b>Email</b></label>
                         <button type="button" class="sign-up-btn">Sign me up!</button> <!--kilde til button tagg under, linje 5-->
                     </form>
                 </section>
             </main>
             <footer role="contentinfo"> <!--ARIA attributter kilde linje http://mcdlr.com/wai-aria-cheatsheet/ -->
                 <a href="index.html"><img src="img/logo1.png" alt="bilde av logoen til nettsiden" class="footer-img"></a>
-                <p>Company copyright 2023</p>
+                <p>Companyrights Companyname 2023</p>
                 <section>
                     <a href="https://www.facebook.com/?locale=nb_NO"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
