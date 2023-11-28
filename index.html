@@ -9,46 +9,42 @@
         <link href="css/font/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/font/css/brands.css" rel="stylesheet">
         <link href="css/font/font/css/solid.css" rel="stylesheet">
-        <title></title>
+        <title>Forside</title>
     </head>
     <body>
         <div id="grid-container">
-            <header>
-                <nav>
+            <header role="banner"> <!--ARIA attributter kilde linje http://mcdlr.com/wai-aria-cheatsheet/ -->
+                <nav role="navigation"> <!--ARIA attributter kilde linje http://mcdlr.com/wai-aria-cheatsheet/ -->
                     <a href="index.html" class="logo"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden" id="logo-bilde"></a>
                     <p>
-                    <a href="index.html" class="home-btn">Home</a>
-                    <a href="products.html" class="navbar">Portfolio</a>
-                    <a href="about.html" class="navbar">About</a>
-                    <a href="about.html#contact" class="contact-btn">Contact</a>
+                        <a href="index.html" class="home-btn">Home</a>
+                        <a href="products.html" class="navbar">Portfolio</a>
+                        <a href="about.html" class="navbar">About</a>
+                        <a href="about.html#contact" class="contact-btn">Contact</a>
                     </p>
                     <a href="#logo-bilde"><i id="til-toppen" class="fa-solid fa-arrow-up"></i></a>
                 </nav>
                 <section class="section-1">
-                    <img src="https://placehold.co/400" alt="placeholder bilde" class="mobile-bilde">
+                    <img src="https://placehold.co/400" alt="placeholder bilde som bakgrunnsbilde på mobil, har ingen annen funksjon" class="mobile-bilde"> <!--bilde hentet fra https://placehold.co/-->
                     <h1>Compeling headline</h1>
                     <p class="p-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                    <!--kilde til hvordan linke seg videre på siden ved bruk av id, link og #,  linje 11-->
-                    <a href="#Our-services" class="read-more-btn">Read more about our services</a>
-                    <!--kilde, bevegende bilde, linje 7-->
-                    <video autoplay muted loop height="300" width="400" class="desktop-bilde">
+                    <a href="about.html#Our-services" class="read-more-btn">Read more about our services</a> <!--kilde til hvordan linke seg videre på siden ved bruk av id, link og #, https://www.tutorialspoint.com/how-to-create-links-to-sections-within-the-same-page-in-html-->
+                    <video autoplay muted loop height="300" width="400" class="desktop-bilde"> <!--kilde, bevegende bilde, https://www.w3schools.com/howto/howto_css_fullscreen_video.asp-->
                         <source src="img/mountains.mp4" type="video/mp4">
                     </video>
                 </section>    
                 </header>
-            <main>
+            <main role="main"> <!--ARIA attributter kilde linje http://mcdlr.com/wai-aria-cheatsheet/ -->
                 <section class="section-2-f">
                     <h3>Enganging subheading. What can you help your visitors with</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </section>
                 <section class="section-3-f">
-                    <!--bilde hentet fra https://placehold.co/-->
-                    <img src="https://placehold.co/400" alt="" class="mobile-bilde-2">
+                    <img src="https://placehold.co/400" alt="placeholder bilde, sier noe om innholdet i artikkelen" class="mobile-bilde-2"> <!--bilde hentet fra https://placehold.co/-->
                     <article class="article-1-f">
                         <h5>About Our Company</h5>
                         <p class="section-3-f-p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-                        <!--kilde til button tagg under, linje 5-->
-                        <button type="button"><a href="about.html">Read more about us</a></button>
+                        <button type="button"><a href="about.html">Read more about us</a></button> <!--kilde til button tagg under, linje 5-->
                     </article>    
                 </section>
                 <section class="section-4-f">
@@ -78,14 +74,14 @@
                 </section>
                 <section class="sign-up-f">
                     <p class="p-signup-overskrift">Sign up for our newsletter</p>
-                    <form action=""> <!-- kilder linje 6 -->
+                    <form action=""> <!-- kilder, https://www.w3schools.com/howto/howto_css_signup_form.asp -->
                         <label for="email" class="sign-up-email"><b>Email</b></label>
-                        <button type="button" class="sign-up-btn">Sign me up!</button>
+                        <button type="button" class="sign-up-btn">Sign me up!</button> <!--kilde til button tagg under, linje 5-->
                     </form>
                 </section>
             </main>
-            <footer>
-                <img src="img/logo1.png" alt="bilde av logoen til nettsiden" class="footer-img">
+            <footer role="contentinfo"> <!--ARIA attributter kilde linje http://mcdlr.com/wai-aria-cheatsheet/ -->
+                <a href="index.html"><img src="img/logo1.png" alt="bilde av logoen til nettsiden" class="footer-img"></a>
                 <p>Company copyright 2023</p>
                 <section>
                     <a href="https://www.facebook.com/?locale=nb_NO"><i class="fa-brands fa-square-facebook"></i></a>
