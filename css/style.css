@@ -465,8 +465,12 @@ footer section{
         grid-template-rows: 0fr 1fr 0fr;
     }
 
+    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;1,200&display=swap');
+  
+
     html{
-        font-family: sans-serif;
+        font-family: 'Montserrat', sans-serif;
         max-width: 1600px;
     }
 
@@ -768,28 +772,34 @@ footer section{
         color: #e6bd43;
     }
 
+    .section-branding{
+        display: flex;
+        flex-direction: column;
+    }
+
     .branding-articles{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         margin: 2rem 10rem 5rem 10rem;
-        align-items: stretch;
+        
     }
 
     .p-center{
         margin: 0rem;
     }
 
-
     main section div article img{
-        width: 350px;
+        max-width: 692px;
+        min-width: 200px;
         height: 350px;
     }
 
     main section div article img:hover{
-        width: 360px;
+        max-width: 692px;
         height: 360px;
-        transition: width 1s; /*kilde, https://www.w3schools.com/css/css3_transitions.asp*/
+        transition-timing-function: ease-in; /*kilde, https://www.w3schools.com/css/css3_transitions.asp*/
+        transition: 1s;
     }
 
     .portfolio-p{
@@ -811,7 +821,6 @@ footer section{
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 1rem 10rem 5rem 10rem;
-
     }
 
     #development{

@@ -16,6 +16,7 @@
         <link href="css/font/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/font/css/brands.css" rel="stylesheet">
         <link href="css/font/font/css/solid.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="img/logo1.png"> <!--favicon, kilde https://www.w3schools.com/html/html_favicon.asp-->
         <title> About</title>
     </head>
     <body>
@@ -24,10 +25,10 @@
                 <nav role="navigation"> <!--ARIA attributter kilde linje http://mcdlr.com/wai-aria-cheatsheet/ -->
                     <a href="index.html"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden" id="logo-bilde"></a>
                     <p>
-                        <a href="index.html" class="navbar">Home</a>
+                        <a href="index.html" class="navbar" title="Front page">Home</a> <!--lagt til title atributt, kilde https://www.w3schools.com/tags/att_title.asp#gsc.tab=0-->
                         <a href="products.html" class="navbar">Portfolio</a>
-                        <a href="about.html" class="about-btn">About</a>
-                        <a href="#contact" class="contact-btn">Contact</a>
+                        <a href="about.html" class="about-btn">About</a> 
+                        <a href="#contact" class="contact-btn" title="Contact information">Contact</a> <!--lagt til title atributt, kilde https://www.w3schools.com/tags/att_title.asp#gsc.tab=0-->
                     </p>
                     <a href="#logo-bilde"><i id="til-toppen" class="fa-solid fa-arrow-up"></i></a>
                 </nav>
@@ -39,31 +40,39 @@
                         <p class="company-name">Company name</p>
                         <h2 class="about-h2">About our Company</h2>
                         <p class="about-p-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrup</p>
-                        <a href="#contact" class="get-in-touch-btn">Get in touch with us</a> <!--kilde til button tagg under, linje 5-->
+                        <a href="#contact" class="get-in-touch-btn">Get in touch with us</a>
                     </article>
                 </section>
                 <section class="section-4-f">
                     <h3>Our Services</h3>
                     <div class="article-4-f">
-                        <article>
+                        <article itemscope itemtype="https://schema.org/Offer">
                             <i class="fa-solid fa-users"></i>
-                            <p>Branding</p>
+                            <p itemprop="itemOffered">Branding</p>
                             <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and</p>
+                            <meta itemprop="price" content="1000">
+                            <meta itemprop="additionalType" content="service">
                         </article>
                         <article>
                             <i class="fa-solid fa-cloud-arrow-up"></i>
-                            <p>Branding</p>
+                            <p itemprop="itemOffered">Branding</p>
                             <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and</p>
+                            <meta itemprop="price" content="2000">
+                            <meta itemprop="additionalType" content="service">
                         </article>
                         <article>
                             <i class="fa-solid fa-code"></i>
-                            <p>Branding</p>
+                            <p itemprop="itemOffered">Branding</p>
                             <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and</p>
+                            <meta itemprop="price" content="3000">
+                            <meta itemprop="additionalType" content="service">
                         </article>
                         <article>
                             <i class="fa-solid fa-wifi"></i>
-                            <p>Branding</p>
+                            <p itemprop="itemOffered">Branding</p>
                             <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and</p>
+                            <meta itemprop="price" content="4000">
+                            <meta itemprop="additionalType" content="service">
                         </article>
                     </div>
                 </section>
@@ -93,9 +102,9 @@
                         <p class="contact-info-about">Contact information</p>
                         <p class="contact-info-p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint </p>
                         <ul class="contact-icons">
-                           <li><i class="fa-solid fa-location-pin"></i> B R A Veien 4, 1757 Halden</li>
-                           <li><i class="fa-solid fa-phone"></i> 69 60 80 00</li>
-                           <li><i class="fa-solid fa-envelope"></i> postmottak@hiof.no</li>
+                           <li title="Adresse"><i class="fa-solid fa-location-pin"></i> B R A Veien 4, 1757 Halden</li> <!--lagt til title atributt, kilde https://www.w3schools.com/tags/att_title.asp#gsc.tab=0-->
+                           <li title="Phone number"><i class="fa-solid fa-phone"></i> 69 60 80 00</li> <!--lagt til title atributt, kilde https://www.w3schools.com/tags/att_title.asp#gsc.tab=0-->
+                           <li title="Email"><i class="fa-solid fa-envelope"></i> postmottak@hiof.no</li> <!--lagt til title atributt, kilde https://www.w3schools.com/tags/att_title.asp#gsc.tab=0-->
                         </ul>
                     </article>
                 </section>
@@ -107,9 +116,9 @@
                 <a href="index.html"><img src="img/logo1.png" alt="bilde av logoen til nettsiden" class="footer-img"></a>
                 <p>Companyrights Companyname 2023</p>
                 <section>
-                    <a href="https://www.facebook.com/?locale=nb_NO"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/?locale=nb_NO"><i class="fa-brands fa-square-facebook" title="Facebook"></i></a> <!--lagt til title atributt, kilde https://www.w3schools.com/tags/att_title.asp#gsc.tab=0-->
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" title="Instagram"></i></a> <!--lagt til title atributt, kilde https://www.w3schools.com/tags/att_title.asp#gsc.tab=0-->
+                    <a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin" title="Linkedin"></i></a> <!--lagt til title atributt, kilde https://www.w3schools.com/tags/att_title.asp#gsc.tab=0-->
                 </section>
             </footer>
         </div>
