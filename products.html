@@ -47,9 +47,11 @@
                         <a href="#development">Development</a> 
                     </span>
                 </section>
-                <section class="section-branding">
-                   <h3 id="branding">Branding</h3>
+                <section itemscope itemtype="https://schema.org/Service" class="section-branding"> <!--kilde til hvordan bruke mikrodata, https://www.w3.org/TR/2021/NOTE-microdata-20210128/-->
+                   <h3 itemprop="category" id="branding">Branding</h3>
                    <hr> <!--kilde, https://www.w3schools.com/tags/tag_hr.asp-->
+                   <meta itemprop="description" content="service">
+                   <meta itemprop="serviceType" content="branding">
                    <div class="branding-articles">
                         <article class="p-center">
                             <img src="https://placehold.co/400" alt="artikkel bilde 1"> <!--bilde hentet fra https://placehold.co/-->
@@ -69,9 +71,11 @@
                         </article>
                     </div>
                 </section>
-                <section>
-                    <h3 id="design">Design</h3>
+                <section itemscope itemtype="https://schema.org/Service">
+                    <h3 itemprop="category" id="design">Design</h3>
                     <hr> <!--kilde, https://www.w3schools.com/tags/tag_hr.asp-->
+                    <meta itemprop="description" content="service">
+                   <meta itemprop="serviceType" content="Design">
                     <div class="design-articles">
                         <article class="p-center">
                             <img src="https://placehold.co/400" alt="artikkel bilde 5"> <!--bilde hentet fra https://placehold.co/-->
@@ -87,9 +91,11 @@
                         </article>
                     </div>
                 </section>
-                <section>
-                    <h3 id="development">Development</h3>
+                <section itemscope itemtype="https://schema.org/Service">
+                    <h3 itemprop="category" id="development">Development</h3>
                     <hr> <!--kilde, https://www.w3schools.com/tags/tag_hr.asp-->
+                    <meta itemprop="description" content="service">
+                    <meta itemprop="serviceType" content="Development">
                     <div class="development-articles">
                         <article class="p-center">
                             <img src="https://placehold.co/400" alt="artikkel bilde 8" class="development-img"> <!--bilde hentet fra https://placehold.co/-->

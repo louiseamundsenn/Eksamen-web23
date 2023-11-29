@@ -34,9 +34,9 @@
                 </nav>
                 </header>
             <main role="main"> <!--ARIA attributter kilde linje http://mcdlr.com/wai-aria-cheatsheet/ -->
-                <section class="section-1">
-                    <img src="https://placehold.co/400" alt="placeholder bilde som bakgrunnsbilde på mobil, har ingen annen funksjon" class="mobile-bilde"> <!--bilde hentet fra https://placehold.co/-->
-                    <h1>Compeling headline</h1>
+                <section itemscope itemtype="https://schema.org/OnlineBusiness" class="section-1"> <!--kilde til hvordan jeg brukte mikrodata,https://www.w3.org/TR/2021/NOTE-microdata-20210128/ -->
+                    <img itemscope="image" src="https://placehold.co/400" alt="placeholder bilde som bakgrunnsbilde på mobil, har ingen annen funksjon" class="mobile-bilde"> <!--bilde hentet fra https://placehold.co/-->
+                    <h1 itemprop="legalName">Compeling headline</h1>
                     <p class="p-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                     <a href="about.html" class="read-more-btn">Read more about our services</a> <!--kilde til hvordan linke seg videre på siden ved bruk av id, link og #, https://www.tutorialspoint.com/how-to-create-links-to-sections-within-the-same-page-in-html-->
                     <video autoplay muted loop height="300" width="400" class="desktop-bilde"> <!--kilde, bevegende bilde, https://www.w3schools.com/howto/howto_css_fullscreen_video.asp-->
@@ -58,7 +58,7 @@
                 <section class="section-4-f">
                     <h5 id="Our-services">Our Services</h5>
                     <div class="article-4-f">
-                        <article itemscope itemtype="https://schema.org/Offer">
+                        <article itemscope itemtype="https://schema.org/Offer"> <!--kilde til hvordan bruke microdata, https://www.w3.org/TR/2021/NOTE-microdata-20210128/ -->
                             <i class="fa-solid fa-users"></i>
                             <p itemprop="itemOffered" class="p-overskrift">Branding</p>
                             <p class="our-services-p">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and</p>
