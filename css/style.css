@@ -1,6 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;1,200&display=swap');
+
+
 *{
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #grid-container{
@@ -23,6 +27,10 @@ main{
 
 footer{
     grid-area: footer;
+}
+
+header nav a{
+    display: flex;
 }
 
 .navbar{
@@ -73,6 +81,15 @@ h1{
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.heading-portfolio{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .p-heading{
@@ -82,6 +99,8 @@ h1{
     transform: translate(-50%, -50%);
     display: flex;
     text-align: center;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 .read-more-btn{
@@ -92,7 +111,7 @@ h1{
     background-color: #e6bd43;
     color: #000;
     padding: 1rem 1rem 1rem 1rem;
-    margin: 0rem 0rem 0rem 6rem;
+    margin: 0rem 0rem 0rem 6.6rem;
     position: absolute;
     top: 68%;
     left: 50%;
@@ -114,21 +133,24 @@ h1{
 } 
 
 .about-bilde{
-    background-image:url(https://placehold.co/400) ; /*kilde https://www.w3schools.com/cssref/pr_background-image.php*/
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 800px;
+    height: 700px;
 }
 
 .about-section-1{
     position: absolute;
-    top: 50%;
-    left: 50% ;
+    top: 110%;
+    left: 70% ;
     transform:translate(-35%, -20%);
-    width: 70%;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.408);
     padding: 1rem;
+}
+
+.company-name{
+    margin: 0.5rem 0rem 1rem 0rem ;
 }
 
 .about-h2{
@@ -141,6 +163,9 @@ h1{
 }
 
 .get-in-touch-btn{
+    text-decoration: none;
+    border: solid;
+    color: black;
     width: 70%;
     padding: 0.5rem;
     margin: 1rem 2rem;
@@ -184,6 +209,14 @@ h1{
     text-align: left;
 }
 
+.read-more-about-us-btn{
+    border: 1px solid;
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem;
+    margin: 2rem;
+}
+
 h3{
     font-weight: bold;
     font-size: 25px;
@@ -207,10 +240,12 @@ section article i{
 
 .p-overskrift{
     font-weight: bold;
+    padding: 1rem;
 }
 
 p{
     padding: 0rem 2rem;
+    margin: 0rem 0rem 2rem 0rem;
 }
 
 
@@ -244,8 +279,13 @@ section form{
 
 .sign-up-email{
     background-color: white;
-    padding: 1rem 10rem 1rem 1rem;
+    padding: 1rem 9rem 1rem 1rem;
     color: #2525252d;
+}
+
+b{
+    padding: 0rem;
+    margin: 0rem;
 }
 
 .sign-up-btn{
@@ -253,6 +293,7 @@ section form{
     color: #000;
     font-weight: bold;
     margin: 0rem;
+    font-size: 15px;
 }
 
 footer{
@@ -263,8 +304,11 @@ footer{
 }
 
 .footer-img{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding: 5rem 0rem 0rem 0rem;
+    width: 120px;
+    margin: 0rem 0rem 0rem 14rem;
 }
 
 footer a{
@@ -277,21 +321,33 @@ footer a{
 
 footer p{
     padding: 2.5rem 2rem 0rem 2rem;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 main section span{
     display: flex;
     flex-wrap: wrap;
-    margin: 1.5rem 0rem 0rem 2rem;
+    margin: 1rem 0rem 0rem 3rem;
+}
+
+main section span a{
+    color: #000;
+    border: 1px solid;
+    padding: 1rem;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.mobile-bilde-portfolio{
+    opacity: 0.6;
 }
 
 h4{
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
-    padding: 0rem 8rem 0rem 0rem;
+    padding: 0rem 12.5rem 0rem 0rem;
 }
 
 hr{
@@ -324,24 +380,34 @@ main section button a{
 #branding, #design, #development{
    display: flex;
    justify-content: left;
-   padding: 0rem 0rem 0rem 3rem;
+   padding: 0rem 0rem 0rem 4rem;
+   font-size: 30px;
 }
 
 .portfolio-p{
     display: flex;
     justify-content: left;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     color: #000;
-    padding: 0rem;
+    padding: 1rem 1rem 1rem 1.5rem;
+}
+
+div article img{
+    width: 500px;
+    height: 500px;
 }
 
 .about-form{
     display: flex;
     flex-wrap: wrap;
-    
+    margin: 2rem;
 }
 
+#name,#subject, textarea{
+    border: #fff;
+    padding: 1rem;
+}
 
 .clients-about{
     background-color: #e6bd43;
@@ -354,20 +420,25 @@ main section button a{
 
 .logo-1{
     padding: 2rem 0rem 0rem 4rem;
+    width: 45%;
+    height: 30%;
 }
 
 .logo-2{
     padding: 2rem 0rem 0rem 4rem;
+    width: 45%;
+    height: 30%;
 }
 
 .logo-3{
-   padding: 3rem 0rem 3rem 10.5rem;
+   padding: 3rem 0rem 3rem 12rem;
+   width: 70%;
+    height: 60%;
 }
 
 .section-form{
     background-color: #2525250f;
 }
-
 
 section article form{
     display: flex;
@@ -400,21 +471,24 @@ section article form{
 .form-btn-about{
     background-color: #e6bd43;
     padding: 1rem;
-    margin: 0rem 14rem 4rem 0rem;
+    margin: 0rem 17rem 4rem 0rem;
+    border: #e6bd43;
 }
 
 .contact-info-about{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 section article ul li i{
-    font-size: 15px;
+    font-size: 20px;
+    padding: 0rem 1rem 0rem 0rem;
 }
 
 section article ul li{
     list-style: none;
     padding: 0.5rem;
+    font-size: 20px;
 }
 
 .contact-icons{
@@ -436,8 +510,7 @@ section iframe{
 
 footer section{
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
     padding: 0rem 5rem 3rem 5rem;
 }
 
@@ -510,6 +583,7 @@ footer section{
     .portfolio-btn{
         padding: 1.5rem 0rem 0rem 0rem;
         font-size: 15px;
+        font-weight: bold;
     }
 
     .about-btn{
@@ -565,7 +639,7 @@ footer section{
 
     h1{
         font-size: 50px;
-        top: 20%;
+        top: 8%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1; /*kilde https://www.w3schools.com/cssref/pr_pos_z-index.php*/
@@ -632,6 +706,7 @@ footer section{
         text-decoration: none;
         color: #000;
         border: 3px solid;
+        margin: 0rem;
     }
 
     .read-more-about-us-btn:hover{
@@ -706,19 +781,20 @@ footer section{
         justify-content: space-around;
     }
 
-    .footer-img{
+    footer img{
         width: 145px;
     }
 
     footer p{
         font-size: 20px;
-        padding: 10rem 2rem 0rem 7rem;
+        padding: 12rem 15rem 0rem 7rem;
         color: #ffffffcd;
     }
 
     footer section{
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         padding: 10rem 0rem 5rem 5rem;
     }
 
@@ -790,7 +866,7 @@ footer section{
     }
 
     main section div article img{
-        max-width: 692px;
+        width: 350px;
         min-width: 200px;
         height: 350px;
     }
@@ -842,7 +918,7 @@ footer section{
 
     .about-section-1{
         position: absolute;
-        top: 43%;
+        top: 50%;
         width: 40%;
         left: 65%;
         background-color:#ffffffcf;
@@ -964,7 +1040,7 @@ footer section{
         position: sticky;
         top: 225%;
         left: 50%;
-        transform: translate(0%, -233%);
+        transform: translate(6%, -210%);
         width: 40%;
     }
 
